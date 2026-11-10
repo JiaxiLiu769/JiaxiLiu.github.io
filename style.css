@@ -541,3 +541,140 @@ footer {
     width: 100%;
     height: auto;
 }
+
+/* Quantitative evaluation */
+
+.metrics-section {
+    margin-top: 36px;
+}
+
+.metrics-figure {
+    margin: 20px auto;
+    max-width: 850px;
+}
+
+.metrics-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.metrics-figure figcaption {
+    margin-top: 12px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.experiment-caption,
+.metrics-figure figcaption {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   COLLAPSIBLE PROJECT DETAILS
+   ========================================= */
+
+/* Collapsible container */
+
+.project-details {
+    margin-top: 24px;
+}
+
+/* Expand / collapse button */
+
+.project-details summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 20px;
+
+    background-color: #25354c;
+    color: var(--accent);
+
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+    list-style: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Hide default browser arrow */
+
+.project-details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Hover effect */
+
+.project-details summary:hover {
+    background-color: #30435e;
+    border-color: var(--accent);
+}
+
+/* Expanded state */
+
+.project-details[open] summary {
+    background-color: #1e3a5f;
+    border-color: var(--accent);
+}
+
+/* Content displayed when expanded */
+
+.project-details-content {
+    padding-top: 24px;
+    margin-top: 20px;
+
+    border-top: 1px solid var(--border-color);
+}
+
+/* Show / hide button labels */
+
+.project-details .hide-label {
+    display: none;
+}
+
+.project-details[open] .show-label {
+    display: none;
+}
+
+.project-details[open] .hide-label {
+    display: inline;
+}
+
+/* Keyboard accessibility */
+
+.project-details summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* Mobile devices */
+
+@media (max-width: 600px) {
+
+    .project-details summary {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    .project-details-content {
+        padding-top: 18px;
+    }
+}
