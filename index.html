@@ -181,7 +181,7 @@
             <h3>Programming Languages</h3>
 
             <p>
-                Python, Java, C++, C, SQL
+                Python, Java, C++, C, SQL……
             </p>
 
         </div>
@@ -193,7 +193,7 @@
 
             <p>
                 PyTorch, scikit-learn, Flutter,
-                NumPy, pandas, Matplotlib
+                NumPy, pandas, Matplotlib……
             </p>
 
         </div>
@@ -204,7 +204,7 @@
             <h3>Databases & Backend</h3>
 
             <p>
-                MySQL, SQL Server, Firebase
+                MySQL, SQL Server, Firebase……
             </p>
 
         </div>
@@ -217,7 +217,7 @@
             <p>
                 Git, GitHub, MATLAB, Android Studio,
                 VS Code, IntelliJ IDEA, PyCharm,
-                Eclipse, Jupyter Notebook, Figma
+                Eclipse, Jupyter Notebook, Figma……
             </p>
 
         </div>
@@ -417,59 +417,103 @@
 
         <!-- Project 4 -->
 
-        <article class="project-card">
 
-            <h3>
-                Non-Local Means Image Denoising
-            </h3>
+        <article class="project-card denoising-project">
+
+            <p class="project-category">
+                IMAGE PROCESSING
+            </p>
+
+            <h3>Non-Local Means Image Denoising</h3>
 
             <p class="project-date">
                 February 2026 – April 2026
             </p>
 
-            <p class="project-tech">
-                MATLAB | Image Processing |
-                Non-Local Means
-            </p>
+            <div class="project-tags">
+                <span>MATLAB</span>
+                <span>Non-Local Means</span>
+                <span>Image Processing</span>
+                <span>PSNR / SSIM</span>
+            </div>
+
+            <h4>Project Overview</h4>
 
             <p>
-                Implemented the Non-Local Means
-                image denoising algorithm
-                using Gaussian-weighted
-                patch similarity to reduce
-                Gaussian noise.
+                Implemented the Non-Local Means (NLM)
+                image denoising algorithm in MATLAB
+                to reduce Gaussian noise while
+                preserving image details and structures.
             </p>
 
             <h4>My Contributions</h4>
 
             <ul>
                 <li>
-                    Implemented the NLM algorithm
-                    in MATLAB.
+                    Implemented Gaussian-weighted
+                    patch similarity for NLM filtering.
                 </li>
 
                 <li>
-                    Optimized denoising performance
-                    by tuning search window size,
-                    patch size, and filtering strength.
+                    Optimized search window size,
+                    patch size, and filtering strength
+                    through experiments.
                 </li>
 
                 <li>
-                    Evaluated NLM against Gaussian,
+                    Compared NLM with Gaussian,
                     Wiener, and NLM-SAP filters
                     using four test images.
                 </li>
             </ul>
 
-            <h4>Results</h4>
+            <h4>Experimental Results</h4>
 
-            <p>
-                Achieved a 63.2% average reduction
-                in mean squared error compared
-                with Gaussian filtering.
-            </p>
+            <div class="project-result">
+                <strong>63.2%</strong>
+                <p>
+                    Average reduction in Mean Squared
+                    Error (MSE) compared with
+                    Gaussian filtering.
+                </p>
+            </div>
+
+            <h4>Visual Comparison</h4>
+
+            <div class="experiment-gallery">
+
+                <h4>Denoising Results Comparison</h4>
+
+                <p>
+                    Visual comparison of original images,
+                    Gaussian white noise, and four
+                    denoising methods across four
+                    test images.
+                </p>
+
+                <div class="experiment-images">
+                    <img
+                            src="assets/denoising/part1.png"
+                            alt="Original images and Gaussian noise"
+                            loading="lazy"
+                    >
+
+                    <img
+                            src="assets/denoising/part2.png"
+                            alt="NLM, Gaussian, Wiener and NLM-SAP results"
+                            loading="lazy"
+                    >
+                </div>
+
+                <p class="experiment-caption">
+                    Figure 1. Comparison of denoising
+                    methods on four test images.
+                </p>
+
+            </div>
 
         </article>
+
 
     </section>
 

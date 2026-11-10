@@ -520,3 +520,26 @@ footer {
         animation-duration: 0.01ms !important;
     }
 }
+
+
+.experiment-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.experiment-images img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.experiment-caption {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-top: 12px;
+}
