@@ -81,3 +81,57 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a,
+.logo {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Hero section */
+header .hero {
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
