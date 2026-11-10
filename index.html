@@ -1,71 +1,530 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <meta name="description"
+          content="Jiaxi Liu's personal portfolio.
+          Software development, algorithms,
+          machine learning, and academic projects.">
+
+    <title>Jiaxi Liu | Software Developer</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
+<!-- ================= NAVIGATION ================= -->
+
 <header>
-    <nav class="navbar">
-        <a href="#home" class="logo">Jiaxi Liu</a>
+    <nav class="navbar" aria-label="Main navigation">
+
+        <a href="#home" class="logo">
+            Jiaxi Liu
+        </a>
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
+    <!-- ================= HOME ================= -->
+
     <section id="home" class="hero">
-        <h1>Hello, I'm Jiaxi!</h1>
-        <p>Computer Science Graduate</p>
-        <p>
-            Passionate about software development,
-            artificial intelligence, and problem solving.
-        </p>
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                WELCOME TO MY PORTFOLIO
+            </p>
+
+            <h1>Hi, I'm Jiaxi Liu.</h1>
+
+            <h2>Software Developer</h2>
+
+            <p class="hero-description">
+                Master of Applied Computer Science graduate
+                from Concordia University with a strong
+                foundation in Python, Java, algorithms,
+                and software development.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn-secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
     </section>
 </header>
 
+
 <main>
+
+    <!-- ================= ABOUT ================= -->
+
     <section id="about">
+
         <h2>About Me</h2>
+
         <p>
-            Welcome to my personal website!
-            I'm passionate about software
-            development and artificial intelligence.
+            I am a recent Master of Applied Computer
+            Science graduate from Concordia University,
+            with a strong interest in software
+            development, algorithm design,
+            and artificial intelligence.
         </p>
+
+        <p>
+            Through academic projects, I have gained
+            hands-on experience in algorithm
+            implementation, performance optimization,
+            mobile application development,
+            data analysis, and software testing.
+        </p>
+
+        <p>
+            I enjoy solving technical problems,
+            exploring new technologies,
+            and collaborating with others
+            to develop practical software solutions.
+        </p>
+
     </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education-item">
+
+            <h3>Concordia University</h3>
+
+            <p>Montreal, Quebec, Canada</p>
+
+            <p>
+                <strong>
+                    Master of Applied Computer Science
+                    – Computer Science
+                </strong>
+            </p>
+
+            <p>May 2024 – May 2026</p>
+
+            <p>GPA: 3.70 / 4.30</p>
+
+            <h4>Relevant Coursework</h4>
+
+            <ul>
+                <li>Algorithm Design Techniques</li>
+                <li>Applied Artificial Intelligence</li>
+                <li>Image Processing</li>
+                <li>Advanced Programming Practices</li>
+            </ul>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <h3>Shandong University</h3>
+
+            <p>Weihai, Shandong, China</p>
+
+            <p>
+                <strong>
+                    Bachelor of Engineering
+                    – Computer Science and Technology
+                </strong>
+            </p>
+
+            <p>September 2019 – June 2023</p>
+
+            <p>Average: 85.54 / 100</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
 
     <section id="skills">
+
         <h2>Technical Skills</h2>
-        <p>Python, Java, C++, SQL, MATLAB</p>
+
+        <div class="skill-category">
+
+            <h3>Programming Languages</h3>
+
+            <p>
+                Python, Java, C++, C, SQL
+            </p>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <h3>Frameworks & Libraries</h3>
+
+            <p>
+                PyTorch, scikit-learn, Flutter,
+                NumPy, pandas, Matplotlib
+            </p>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <h3>Databases & Backend</h3>
+
+            <p>
+                MySQL, SQL Server, Firebase
+            </p>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <h3>Development Tools</h3>
+
+            <p>
+                Git, GitHub, MATLAB, Android Studio,
+                VS Code, IntelliJ IDEA, PyCharm,
+                Eclipse, Jupyter Notebook, Figma
+            </p>
+
+        </div>
+
     </section>
+
+
+    <!-- ================= PROJECTS ================= -->
 
     <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of my projects.</p>
+
+        <h2>Projects</h2>
+
+        <p>
+            Selected academic projects demonstrating
+            my experience in software engineering,
+            algorithm optimization,
+            machine learning, and image processing.
+        </p>
+
+
+        <!-- Project 1 -->
+
+        <article class="project-card">
+
+            <h3>Le Gym Mobile Application</h3>
+
+            <p class="project-date">
+                February 2025 – April 2025
+            </p>
+
+            <p class="project-tech">
+                Flutter | Firebase | Android Studio
+            </p>
+
+            <p>
+                Collaborated with three teammates
+                to develop a gym mobile application
+                with a focus on usability,
+                account management,
+                and application functionality.
+            </p>
+
+            <h4>My Contributions</h4>
+
+            <ul>
+                <li>
+                    Analyzed user needs through the
+                    Double Diamond design process,
+                    user personas, and journey maps.
+                </li>
+
+                <li>
+                    Developed the user account interface
+                    in Flutter, allowing users to view
+                    and edit personal information,
+                    navigate between pages, and log out.
+                </li>
+
+                <li>
+                    Participated in internal end-to-end
+                    testing to validate application
+                    functionality and integration.
+                </li>
+            </ul>
+
+        </article>
+
+
+        <!-- Project 2 -->
+
+        <article class="project-card">
+
+            <h3>
+                Dynamic Community Detection:
+                P-Lite Algorithm
+            </h3>
+
+            <p class="project-date">
+                September 2025 – December 2025
+            </p>
+
+            <p class="project-tech">
+                Python | Graph Algorithms |
+                Performance Optimization
+            </p>
+
+            <p>
+                Implemented and evaluated an optimized
+                approach to dynamic community detection
+                based on the DevDynaP framework.
+            </p>
+
+            <h4>My Contributions</h4>
+
+            <ul>
+                <li>
+                    Collaborated with a teammate
+                    to implement and evaluate
+                    the P-Lite algorithm.
+                </li>
+
+                <li>
+                    Implemented core components
+                    of the DevDynaP framework.
+                </li>
+
+                <li>
+                    Tested a degree-based calculation
+                    approach that reduced metric-update
+                    complexity from O(d²) to O(1).
+                </li>
+
+                <li>
+                    Benchmarked the algorithms
+                    using synthetic and real-world
+                    network datasets.
+                </li>
+            </ul>
+
+            <h4>Results</h4>
+
+            <p>
+                Achieved over 80% reduction
+                in execution time with less than
+                2% difference in community
+                detection quality.
+            </p>
+
+        </article>
+
+
+        <!-- Project 3 -->
+
+        <article class="project-card">
+
+            <h3>
+                Marketing Customer Segmentation
+                & Prediction
+            </h3>
+
+            <p class="project-date">
+                February 2026 – April 2026
+            </p>
+
+            <p class="project-tech">
+                Python | Machine Learning |
+                Data Analysis
+            </p>
+
+            <p>
+                Developed a customer segmentation
+                and marketing response prediction
+                system using machine learning
+                techniques.
+            </p>
+
+            <h4>My Contributions</h4>
+
+            <ul>
+                <li>
+                    Collaborated with two teammates
+                    to develop and evaluate
+                    the prediction system.
+                </li>
+
+                <li>
+                    Validated system functionality
+                    and evaluated clustering
+                    and classification outcomes
+                    across 15,079 customer records.
+                </li>
+
+                <li>
+                    Analyzed four customer segments
+                    and documented experimental
+                    methodology and findings.
+                </li>
+
+                <li>
+                    Compared Logistic Regression
+                    and Random Forest models.
+                </li>
+            </ul>
+
+            <h4>Results</h4>
+
+            <p>
+                Logistic Regression achieved
+                99.1% recall and 99.6% F1-score,
+                while providing greater
+                model interpretability.
+            </p>
+
+        </article>
+
+
+        <!-- Project 4 -->
+
+        <article class="project-card">
+
+            <h3>
+                Non-Local Means Image Denoising
+            </h3>
+
+            <p class="project-date">
+                February 2026 – April 2026
+            </p>
+
+            <p class="project-tech">
+                MATLAB | Image Processing |
+                Non-Local Means
+            </p>
+
+            <p>
+                Implemented the Non-Local Means
+                image denoising algorithm
+                using Gaussian-weighted
+                patch similarity to reduce
+                Gaussian noise.
+            </p>
+
+            <h4>My Contributions</h4>
+
+            <ul>
+                <li>
+                    Implemented the NLM algorithm
+                    in MATLAB.
+                </li>
+
+                <li>
+                    Optimized denoising performance
+                    by tuning search window size,
+                    patch size, and filtering strength.
+                </li>
+
+                <li>
+                    Evaluated NLM against Gaussian,
+                    Wiener, and NLM-SAP filters
+                    using four test images.
+                </li>
+            </ul>
+
+            <h4>Results</h4>
+
+            <p>
+                Achieved a 63.2% average reduction
+                in mean squared error compared
+                with Gaussian filtering.
+            </p>
+
+        </article>
+
     </section>
+
+
+    <!-- ================= CONTACT ================= -->
 
     <section id="contact">
+
         <h2>Contact Me</h2>
+
         <p>
-            <a href="https://github.com/JiaxiLiu769">
-                My GitHub
-            </a>
+            I am open to opportunities
+            in software development
+            and related technical fields.
         </p>
+
+        <div class="contact-links">
+
+            <p>
+                Email:
+                <a href="mailto:jiaxi.liu929@gmail.com">
+                    jiaxi.liu929@gmail.com
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a href="https://github.com/JiaxiLiu769"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    github.com/JiaxiLiu769
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/in/jiaxi-liu-a099aa414/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View My LinkedIn Profile
+                </a>
+            </p>
+
+        </div>
+
     </section>
+
 </main>
 
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-    <p>© 2026 My Portfolio</p>
+    <p>&copy; 2026 Jiaxi Liu. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
