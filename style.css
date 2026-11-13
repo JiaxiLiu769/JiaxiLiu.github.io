@@ -823,3 +823,213 @@ footer {
         width: 100%;
     }
 }
+
+/* =========================================
+   HOME - FEATURED WORK
+   ========================================= */
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(300px, 1fr);
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    min-width: 0;
+}
+
+.hero-featured {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.featured-label {
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0 4px;
+}
+
+.featured-card {
+    display: block;
+    padding: 20px 24px;
+
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.featured-card h3 {
+    color: var(--text-primary);
+    font-size: 16px;
+    margin: 0 0 8px;
+}
+
+.featured-card strong {
+    display: block;
+    color: var(--accent);
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.featured-card p {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.featured-card span {
+    display: block;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-featured {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+   GLOBAL BACKGROUND DECORATION
+   ========================================= */
+
+/* Prevent horizontal overflow */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    isolation: isolate;
+}
+
+/* Left and right ambient lighting */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            ellipse 420px 600px at 0% 35%,
+            rgba(37, 99, 235, 0.13),
+            transparent 75%
+        ),
+
+        radial-gradient(
+            ellipse 420px 600px at 100% 70%,
+            rgba(124, 58, 237, 0.11),
+            transparent 75%
+        );
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Subtle technical grid */
+
+body::after {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(56, 189, 248, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(56, 189, 248, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Keep main content above decoration */
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Subtle section heading decoration */
+
+main > section > h2 {
+    position: relative;
+    padding-left: 18px;
+}
+
+main > section > h2::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 17px;
+
+    width: 4px;
+    border-radius: 4px;
+
+    background: linear-gradient(
+        to bottom,
+        #38bdf8,
+        #6366f1
+    );
+}
+
+/* Softer card borders */
+
+.education-item,
+.skill-category,
+.project-card {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Reduce decoration on small screens */
+
+@media (max-width: 768px) {
+
+    body::after {
+        background-size: 35px 35px;
+        opacity: 0.5;
+    }
+
+    body::before {
+        opacity: 0.6;
+    }
+}
