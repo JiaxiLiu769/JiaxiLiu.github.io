@@ -1033,3 +1033,94 @@ main > section > h2::before {
         opacity: 0.6;
     }
 }
+
+
+/* =========================================
+   MARKETING PROJECT - EXPERIMENTAL RESULTS
+   ========================================= */
+
+.marketing-results {
+    margin-top: 36px;
+}
+
+.marketing-results h4 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    color: var(--accent);
+}
+
+.marketing-results p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.marketing-figure {
+    max-width: 700px;
+    margin: 22px auto 36px;
+    text-align: center;
+}
+
+.marketing-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.marketing-figure figcaption {
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+    .marketing-figure {
+        max-width: 100%;
+    }
+
+    .marketing-figure img {
+        padding: 4px;
+    }
+}
+
+
+.community-results {
+    margin-top: 36px;
+}
+
+.community-results h4 {
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.community-figure {
+    max-width: 700px;
+    margin: 24px auto 36px;
+    text-align: center;
+}
+
+.community-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 8px;
+}
+
+.community-figure figcaption {
+    margin-top: 12px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    line-height: 1.6;
+}
